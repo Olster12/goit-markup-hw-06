@@ -60,7 +60,6 @@ img {
     height: auto;
 }
 
-
 /* Logo */
 .logo {
     margin-right: 92px;
@@ -217,6 +216,7 @@ span {
 }
 
 .backdrop {
+    z-index: 55;
     position: fixed;
     top: 0;
     left: 0;
@@ -254,6 +254,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 
     position: absolute;
     width: 30px;
@@ -269,6 +270,12 @@ span {
     border-radius: 50%;
 
     cursor: pointer;
+}
+
+.button-modal:focus,
+.button-modal:hover {
+    fill: #2196F3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Form */
@@ -325,6 +332,8 @@ span {
 
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
+
+    outline: none;
 }
 
 .modal-icon {
@@ -333,20 +342,25 @@ span {
     top: 45%;
 }
 
-
-.form-input:focus,
 .form-input:hover {
     border: 1px solid #2196F3;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+.form-input:focus {
+    border: 1px solid #2196F3;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus ~ .modal-icon,
 .form-input:hover ~ .modal-icon {
     fill: #2196F3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-mailing {
@@ -360,6 +374,7 @@ span {
 
 .text-doc {
     text-decoration: underline;
+    outline: none;
 
     color: #2196F3;
 }
@@ -376,6 +391,7 @@ span {
     padding-left: 15px;
     display: flex;
     margin-bottom: 30px;
+    margin-left: 13px;
     align-items: center;
 
 }
@@ -397,6 +413,11 @@ span {
     background-image: url(../images/check.svg);
 }
 
+.check-input:hover + .check-box,
+.check-input:focus + .check-box {
+    background-image: url(../images/check-focus.svg);
+}
+
 .check-input:checked + .check-box {
     border-radius: 2px;
     background-color: #2196F3;
@@ -406,6 +427,7 @@ span {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+
 
 
 /* Аdvances */
@@ -634,7 +656,7 @@ address {
 .logo-footer {
     display: flex;
     padding: 0;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     
     color: #FFFFFF;
  }
@@ -714,8 +736,7 @@ address {
     border:  1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-
-
+    color: rgba(255, 255, 255, 0.6);
     background-color: rgba(47, 48, 58, 1);
 }
 
