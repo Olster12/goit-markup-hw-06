@@ -422,13 +422,13 @@ span {
 
 
 
-/* Аdvances */
+/* Аdvantages */
 
-.advance-box {
+.advantages {
     display: flex;
 }
 
-.tumba {
+.advantages__tumba {
     display: flex;
     padding: 30px 100px;
     margin-bottom: 30px;
@@ -436,15 +436,15 @@ span {
     background-color: var(--backgraund-section);
 }
 
-.advance-box .item{
+.advantages__item {
     width: 270px;
 }
 
-.advance-box > .item:not(:last-child) {
+.advantages__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.advances-title {
+.advantages__title {
     margin-bottom: 10px;
 
     color: var(--hed-text-color);
@@ -455,7 +455,7 @@ span {
     text-transform: uppercase;
 }
 
-.advances-text {
+.advantages__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
