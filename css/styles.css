@@ -1,20 +1,20 @@
 :root {
---primaey-text-color:#757575;
---hed-text-color:#212121;
---accent-logo-color:#2196F3;
---background-color-header: #FFFFFF; 
---hero-backgraund-color:#2F303A;
---link-color:#2196F3;
---backgraund-section: #F5F4FA;
---card-set-gap: 30px;
---background-card-content: rgba(255, 255, 255, 1);
+    --primaey-text-color: #757575;
+    --hed-text-color: #212121;
+    --accent-logo-color: #2196F3;
+    --background-color-header: #FFFFFF;
+    --hero-backgraund-color: #2F303A;
+    --link-color: #2196F3;
+    --backgraund-section: #F5F4FA;
+    --card-set-gap: 30px;
+    --background-card-content: rgba(255, 255, 255, 1);
 }
 
 
 .page {
     margin: 0;
     color: var(--primaey-text-color);
-        
+
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -42,12 +42,12 @@ ul {
 }
 
 .container {
-   width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
- }
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .section {
     padding-top: 94px;
@@ -59,6 +59,17 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.title {
+    margin-bottom: 50px;
+
+    color: var(--hed-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
 
 /* Logo */
 .logo {
@@ -94,7 +105,7 @@ span {
 }
 
 
-.site-nav .item + .item {
+.site-nav .item+.item {
     margin-left: 50px;
 }
 
@@ -155,7 +166,7 @@ span {
     letter-spacing: 0.02em;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-icon {
@@ -163,10 +174,12 @@ span {
     margin-right: 10px;
 
 }
+
 .phone-email .item.item:not(:last-child) {
     margin-right: 40px;
 
 }
+
 .phone-email .link:hover,
 .phone-email .link:focus {
     color: var(--link-color);
@@ -182,11 +195,10 @@ span {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-image:linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/bacgraund-hero.jpg);
-    background-color:#C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/bacgraund-hero.jpg);
+    background-color: #C4C4C4;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -348,8 +360,8 @@ span {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus ~ .modal-icon,
-.form-input:hover ~ .modal-icon {
+.form-input:focus~.modal-icon,
+.form-input:hover~.modal-icon {
     fill: #2196F3;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -405,12 +417,12 @@ span {
     background-image: url(../images/check.svg);
 }
 
-.check-input:hover + .check-box,
-.check-input:focus + .check-box {
+.check-input:hover+.check-box,
+.check-input:focus+.check-box {
     background-image: url(../images/check-focus.svg);
 }
 
-.check-input:checked + .check-box {
+.check-input:checked+.check-box {
     border-radius: 2px;
     background-color: #2196F3;
     background-image: url(../images/icon\ check.svg);
@@ -462,44 +474,34 @@ span {
 }
 
 
-/* Work */
-.work {
+/* About us */
+.abaut-us {
     padding-top: 0;
 }
 
-.work-box > .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.work-box {
+.abaut-us__box {
     display: flex;
 }
 
-.work-title {
-    margin-bottom: 50px;
-
-    color: var(--hed-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-}
-
-.work-box .item {
+.abaut-us__item {
     position: relative;
 }
 
-.work-decor {
+.abaut-us__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.abaut-us__decor {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 70px;
-    
+
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-title-2 {
+.abaut-us__title {
     margin-top: 27px;
 
     font-weight: 700;
@@ -541,7 +543,7 @@ span {
     margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.card-team > .item {
+.card-team>.item {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
@@ -576,7 +578,7 @@ span {
     fill: #AFB1B8;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-linc .linc:hover,
@@ -585,7 +587,7 @@ span {
     fill: #FFFFFF;
 }
 
-    /* Client */
+/* Client */
 
 .client-titel {
     margin-bottom: 50px;
@@ -608,6 +610,7 @@ span {
     margin-right: 30px;
 
 }
+
 .client-icon {
     display: flex;
     justify-content: center;
@@ -620,7 +623,7 @@ span {
     border-radius: 4px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon:hover,
@@ -628,7 +631,8 @@ span {
     border-color: var(--link-color);
     fill: var(--link-color);
 }
-    /* Footer */
+
+/* Footer */
 footer {
     color: #FFFFFF;
     background: #2F303A;
@@ -649,9 +653,9 @@ address {
     display: flex;
     padding: 0;
     margin-bottom: 20px;
-    
+
     color: #FFFFFF;
- }
+}
 
 .site-footer {
     padding-top: 60px;
@@ -688,7 +692,7 @@ address {
 }
 
 .footer-social {
-    margin-left:70px;
+    margin-left: 70px;
 }
 
 .social-linc {
@@ -699,9 +703,8 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1));
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -715,6 +718,7 @@ address {
 .mailing-list {
     margin-left: 93px;
 }
+
 .footer-form {
     display: flex;
     align-items: center;
@@ -725,7 +729,7 @@ address {
     height: 50px;
     padding: 15px 16px;
 
-    border:  1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
     color: rgba(255, 255, 255, 0.6);
@@ -756,7 +760,7 @@ address {
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
-       
+
     cursor: pointer;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -764,7 +768,7 @@ address {
 .button-primery {
     height: 50px;
     min-width: 200px;
-    border-color: var(--link-color);   
+    border-color: var(--link-color);
     border-radius: 4px;
 
     color: #FFFFFF;
@@ -783,13 +787,13 @@ address {
     padding: 6px 22px;
 
     color: #212121;
-    background-color:#F5F4FA;
+    background-color: #F5F4FA;
     border: 1px solid transparent;
     border-radius: 4px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondary:hover,
@@ -830,7 +834,7 @@ address {
 
 .portfolio-text {
     margin-top: 4px;
-    
+
     color: var(--primaey-text-color);
 
     font-weight: 400;
@@ -850,7 +854,7 @@ address {
     margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.card-set > .item {
+.card-set>.item {
     border: 1px solid #EEEEEE;
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
@@ -866,8 +870,8 @@ address {
 .card:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-content {
@@ -890,7 +894,7 @@ address {
     left: 0;
     width: 100%;
     height: 100%;
-    
+
     padding: 63px 24px;
 
     font-weight: 400;
@@ -899,12 +903,13 @@ address {
 
     color: #FFFFFF;
 
-    background-color: rgba(33, 150, 243, 0.9);;
+    background-color: rgba(33, 150, 243, 0.9);
+    ;
     opacity: 0;
     transform: translatey(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover .card-overlay {
