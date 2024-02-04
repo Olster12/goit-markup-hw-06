@@ -84,17 +84,20 @@ img {
     line-height: 1.19;
 }
 
-
+.logo--
 span {
     color: var(--accent-logo-color);
 }
+
+/*Header*/
+
 
 .header {
     background-color: var(--background-color-header);
     border-bottom: 1px solid #ECECEC;
 }
 
-.header .container {
+.header__container {
     display: flex;
 }
 
