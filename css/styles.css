@@ -10,16 +10,16 @@
     --background-card-content: rgba(255, 255, 255, 1);
 }
 
-
 .page {
     margin: 0;
-    color: var(--primaey-text-color);
 
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    color: var(--primaey-text-color);
 }
 
 
@@ -76,7 +76,7 @@ img {
     margin-right: 92px;
     padding-top: 24px;
     padding-bottom: 25px;
-    color: #000000;
+
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -84,9 +84,16 @@ img {
     line-height: 1.19;
 }
 
-.logo--
-span {
+.logo--accent {
     color: var(--accent-logo-color);
+}
+
+.logo--mode-light {
+    color:  #FFFFFF;
+}
+
+.logo--mode-dark {
+    color: #000000;
 }
 
 /*Header*/
@@ -101,18 +108,20 @@ span {
     display: flex;
 }
 
-/*Nav sayte*/
-.site-nav,
-.site-nav .link {
+/*Nav site*/
+.nav {
+    display: inline-flex;
+}
+
+.nav__link {
     display: flex;
 }
 
-
-.site-nav .item+.item {
+.nav__item {
     margin-left: 50px;
 }
 
-.site-nav .link {
+.nav__link {
     position: relative;
     color: #212121;
 
@@ -126,16 +135,16 @@ span {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: var(--link-color);
 }
 
-.site-nav .link.current {
+.current {
     color: var(--link-color);
 }
 
-.site-nav .current::after {
+.current::after {
     content: '';
     display: block;
 
@@ -155,7 +164,7 @@ span {
     align-items: center;
 }
 
-.phone-email .link {
+.phone-email__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -169,26 +178,22 @@ span {
     letter-spacing: 0.02em;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone-icon {
-    height: 16px;
-    margin-right: 10px;
-
-}
-
-.phone-email .item.item:not(:last-child) {
-    margin-right: 40px;
-
-}
-
-.phone-email .link:hover,
-.phone-email .link:focus {
+.phone-email__link:hover,
+.phone-email__link:focus {
     color: var(--link-color);
     fill: var(--link-color);
 }
 
+.phone-email__icon {
+    margin-right: 10px;
+}
+
+.phone-email__item:not(:last-child) {
+    margin-right: 40px;
+}
 
 /* Herо */
 .hero {
